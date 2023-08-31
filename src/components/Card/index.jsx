@@ -1,12 +1,15 @@
+/* eslint-disable react/prop-types */
 import './style.css';
 
 
-export function Card(){
+
+export function Card(props){
     return (
         <div className='card'>
-            <strong>Luis eduardo</strong>
-            <small>09:29:10</small>
+            <strong>{props.name}</strong>
+            <small>{props.time}</small>
         </div>
     )
 
 }
+
